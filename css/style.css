@@ -1,0 +1,58 @@
+body {
+	text-align: center;
+	max-width: 900px;
+	margin: 0 auto;
+}
+#google{
+	font-family: 'Lato', sans-serif;
+	font-size: 4.0em;
+	position: relative;
+    transition: all 0.5s ease;
+}
+#google:hover  {
+	-webkit-animation-name: color-me-in; /* Safari 4.0 - 8.0 */
+	    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+	    animation-name: color-me-in;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;
+}
+
+#facebook {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+	transition: 4s;
+	transform:scale(1.0,1.0);
+}
+#facebook:hover {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+	transform:scale(1.4,1.4);
+	color: #2e5a86;
+}
+
+#apple{
+ font-family: 'Roboto', sans-serif;
+	 font-size: 3.3em;
+	 transition: 4s;
+}
+#apple:hover{
+ font-family: 'Roboto', sans-serif;
+	 font-size: 3.3em;
+	 -ms-transform: rotateY(360deg); /* IE 9 */
+	 -webkit-transform: rotateY(360deg); /* Chrome, Safari, Opera */
+	 transform: rotateY(360deg); /* Standard syntax */
+}
+@keyframes color-me-in {
+
+  /* Adding a step in the middle */
+  0% {
+    color: #0099cc;
+  }
+  50% {
+    color: #ff6600;
+  }
+  100% {
+    color: #cc0000;
+  }
+}
